@@ -4,3 +4,5 @@ This calculator was made with ReactJS. This calculator takes the current savings
 
 ## Installation and Running
 To run this web application, run `npm install` to install all needed dependencies. Run `npm install` to run the application.
+
+# Images
