@@ -6,3 +6,5 @@ This calculator was made with ReactJS. This calculator takes the current savings
 To run this web application, run `npm install` to install all needed dependencies. Run `npm install` to run the application.
 
 # Images
+![No Input](https://github.com/Derzz/blob/main/images/initial.png?raw=true)
+![Input](https://github.com/Derzz/battlesnek/blob/main/images/input.png?raw=true)
