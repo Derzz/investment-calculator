@@ -18,10 +18,10 @@ const ItemTable = (props) => {
           <SavingsItem
             key={item.id}
             year={item.year}
-            savings={item.savingsEndOfYear}
-            interest={item.yearlyInterest}
+            savings={item.savings}
+            yearlyInterest={item.yearlyInterest}
             totalInterest={item.totalInterest}
-            contribution={item.yearlyContribution}
+            investedCapital={item.investedCapital}
           />
         ))}
     </table>

@@ -45,18 +45,20 @@ function App() {
     const expectedReturn = parseFloat(expectedInterest) / 100;
     const duration = expectedDuration;
 
+    let totalInterest = 0
     // The below code calculates yearly results (total savings, interest etc)
     for (let i = 0; i < duration; i++) {
       const yearlyInterest = currentSavings * expectedReturn;
+      totalInterest += yearlyInterest;
+      const investedCapital = currentSavings + yearlyContribution*(i+1)
       currentSavings += yearlyInterest + yearlyContribution;
       yearlyData.push({
-        // feel free to change the shape of the data pushed to the array!
         id: i,
         year: i + 1,
-        yearlyInterest: expectedReturn.toFixed(2).toString() + '%',
-        totalInterest: formatter.format(yearlyInterest).toString(),
-        savingsEndOfYear: formatter.format(currentSavings).toString(),
-        yearlyContribution: yearlyContribution,
+        savings: formatter.format(currentSavings).toString(),
+        yearlyInterest: formatter.format(yearlyInterest).toString(),
+        totalInterest: formatter.format(totalInterest).toString(),
+        investedCapital: formatter.format(investedCapital).toString(),
       });
     }
     setData(yearlyData);
