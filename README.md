@@ -6,3 +6,5 @@ This calculator was made with ReactJS. This calculator takes the total savings, 
 To run this web application, run `npm install` to install all needed dependencies. Run `npm install` to run the application.
 
 # Images
+![No Input](https://github.com/Derzz/investment-calculator/blob/main/images/initial.png?raw=true)
+![Input](https://github.com/Derzz/investment-calculator/blob/main/images/input.png?raw=true)
